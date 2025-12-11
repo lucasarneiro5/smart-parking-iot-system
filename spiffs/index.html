@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Monitoramento de Vaga – ESP32-S3</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Vaga <span id="vaga_id_title">--</span> – ESP32-S3</h1>
+  </header>
+
+  <section id="wifi-section">
+    <h2>Configuração de Wi-Fi</h2>
+    <form id="wifiForm">
+      <label>SSID:</label>
+      <input type="text" id="ssid" required />
+      <label>Senha:</label>
+      <input type="password" id="password" required />
+      <button type="submit">Salvar Credenciais</button>
+    </form>
+    <p id="wifiStatus"></p>
+  </section>
+
+  <section id="vaga-section">
+    <h2>Status da Vaga</h2>
+    <div class="vaga-container">
+      <div class="vaga">Vaga <span id="vaga_id_display">A12</span>: <span id="vaga_status">occupied</span></div>
+    </div>
+    <button id="refresh">Atualizar</button>
+  </section>
+
+  <script src="app.js"></script>
+</body>
+</html>

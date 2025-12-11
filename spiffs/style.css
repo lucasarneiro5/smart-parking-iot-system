@@ -1,0 +1,72 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f4f4f4;
+  color: #333;
+}
+
+header {
+  background: #0056b3;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+section {
+  background: white;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input, button {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #aaa;
+}
+
+button {
+  background: #0056b3;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #003d80;
+}
+
+.vaga-container {
+  display: flex;
+  gap: 20px;
+}
+
+.vaga {
+  flex: 1;
+  padding: 20px;
+  background: #e8e8e8;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 20px;
+}
+
+.vaga span {
+  font-weight: bold;
+}
+
+@media (max-width: 600px) {
+  .vaga-container {
+    flex-direction: column;
+  }
+}
